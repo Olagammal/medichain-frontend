@@ -30,6 +30,28 @@ const AddUser = () => {
                         <br />
                         <Input id="publicAddress" name="publicAddress" placeholder="enter your public address" type="text" />
                     </FormGroup>
+                    <Label>Who are you?</Label>&nbsp;
+                    <FormGroup check inline>
+
+                        <Input
+                            name="radio1"
+                            type="radio"
+                        />
+                        {' '}
+                        <Label check>
+                            doctor
+                        </Label>
+                    </FormGroup>
+                    <FormGroup check inline>
+                        <Input
+                            name="radio1"
+                            type="radio"
+                        />
+                        {' '}
+                        <Label check>
+                            patient
+                        </Label>
+                    </FormGroup><br />
                     <Button onClick={(e) => { onSubmit(e) }}>
                         Submit
                     </Button>
