@@ -6,6 +6,7 @@ import Login from './pages/Login';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ViewDetails from './pages/ViewDetails';
+import AddUser from './pages/AddUser';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Login />}></Route>
           <Route exact path="/view" element={<ViewDetails />}></Route>
+          <Route exact path="/addUser" element={<AddUser />}></Route>
 
         </Routes>
       </BrowserRouter>
