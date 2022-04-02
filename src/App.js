@@ -1,10 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Login from './pages/Login';
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ViewDetails from './pages/ViewDetails';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +24,14 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Login />}></Route>
+          <Route exact path="/view" element={<ViewDetails />}></Route>
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
